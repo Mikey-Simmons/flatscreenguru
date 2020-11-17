@@ -94,6 +94,8 @@ nav{
 }
 nav a{
     color: white !important;
+    font-weight:500 ;
+    font-size: large;
 }
 .carousel-item{
     
@@ -130,4 +132,7 @@ img #tv_display{
     font-weight: 500;
     background-color: #4385f5;
     color: #F4FAFF;
+}
+.navbar-brand{
+    font-size: xx-large;
 }
