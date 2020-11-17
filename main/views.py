@@ -23,3 +23,5 @@ def submitjob(request):
     return render(request,'submit_page.html')
 def price_page(request):
     return render(request,'pricing.html')
+def product_page(request):
+    return render(request,'products.html')

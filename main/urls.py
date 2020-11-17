@@ -7,5 +7,6 @@ urlpatterns = [
     path('gallery',views.gallery_page),
     path('addjob',views.addjob),
     path('submitted',views.submitjob),
-    path('pricing',views.price_page)
+    path('pricing',views.price_page),
+    path('products',views.product_page)
 ]
