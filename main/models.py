@@ -8,11 +8,11 @@ class JobManager(models.Manager):
     def job_validator(self,postData):
         errors = {}
         if len(postData['customer_name']) < 2:
-            errors['customer_name'] = "Name must be more than 2 characters"
+            errors['customer_name'] = "Name must be more than 2 characters!"
         if len(postData['job_desc']) < 5:
-            errors['job_desc'] = "Description must be more than 5 characters"
+            errors['job_desc'] = "Description must be more than 5 characters!"
         if len(postData['location']) < 5:
-            errors['location'] = "Location must be more than 5 characters"
+            errors['location'] = "Location must be more than 5 characters!"
         return errors
             
 class Job(models.Model):
