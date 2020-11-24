@@ -17,7 +17,7 @@ class JobManager(models.Manager):
         if not EMAIL_REGEX.match(postData['email']):    # test whether a field matches the pattern            
             errors['email'] = "Invalid email address!"
         if len(postData['email']) < 8:
-            errors['email'] = "Email needs to be at least 8 characters"
+            errors['email'] = "Email needs to be at least 8 characters!"
         return errors
             
 class Job(models.Model):
