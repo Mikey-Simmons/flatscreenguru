@@ -29,8 +29,22 @@ def addjob(request):
         )
     return  redirect('/submitted')
 def submitjob(request):
-    return render(request,'submit_page.html')
+    all_jobs = Job.objects.all()
+    context = {
+        'all_jobs' : all_jobs
+        }
+    return render(request,'submit_page.html',context)
 def price_page(request):
     return render(request,'pricing.html')
 def product_page(request):
     return render(request,'products.html')
+def jobs_display(request):
+    all_jobs = Job.objects.all()
+    context = {
+        'all_jobs' : all_jobs
+        }
+    return render(request,'jobs.html',context)
+def delete_job(request):
+    job_to_delete = Job.objects.get(id=request.POST['job_id'])
+    job_to_delete.delete()
+    return redirect('/jobs')
