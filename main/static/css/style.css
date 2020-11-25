@@ -174,3 +174,7 @@ body{
 .d-flex{
     background-color: black !important;
 }
+.btn-success{
+    color: #66ff00 !important;
+    background-color: black;
+}
