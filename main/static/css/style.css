@@ -144,7 +144,8 @@ img #tv_display{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .jumbotron{
-    background-color: black;
+    background-color: 
+    #231f20;
     color: #66ff00;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
