@@ -71,10 +71,11 @@
                     <th scope="col">{{job.job_desc}}</th>
                     <th scope="col">{{job.phone_number}}</th>
                     <th scope="col">{{job.email_address}}</th>
-                    <form action="/deletejob">
+                    <form action="/delete" method="POST">
+                        {%csrf_token%}
                     <th scope="col">
                         
-                        <input type="hidden" name="job_id"value="{{job.id}}">
+                        <input type="hidden" name="job_id"value={{job.id}}>
                         <button type="submit" class="btn btn-danger">Delete</button></th>
                     </form>
                         

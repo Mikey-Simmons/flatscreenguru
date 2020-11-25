@@ -10,5 +10,5 @@ urlpatterns = [
     path('pricing',views.price_page),
     path('products',views.product_page),
     path('jobs', views.jobs_display),
-    path('deletejob',views.delete_job)
+    path('delete',views.delete_job)
 ]
