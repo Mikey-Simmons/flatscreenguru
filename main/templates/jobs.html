@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="container-fluid">
         {{logged_in_user.first_name}}
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="/">The Flatscreen Guru</a>
@@ -64,7 +64,9 @@
                     <th scope="col">Job Description</th>
                     <th scope="col">Phone Number</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Date Added</th>
                     <th scope="col"></th>
+
                 </tr>
                 {%for job in all_jobs%}
                 <tr>
@@ -72,6 +74,7 @@
                     <th scope="col">{{job.job_desc}}</th>
                     <th scope="col">{{job.phone_number}}</th>
                     <th scope="col">{{job.email_address}}</th>
+                    <th scope="col">{{job.created_at}}</th>
                     <form action="/delete" method="POST">
                         {%csrf_token%}
                     <th scope="col">
